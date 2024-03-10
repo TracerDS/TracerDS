@@ -1,4 +1,4 @@
-project "NEnc"
+project "Calculator"
     kind "ConsoleApp"
     language "C++"
     targetdir "%{cfg.platform}/%{cfg.buildcfg}"
@@ -10,9 +10,9 @@ project "NEnc"
         'include/**.hpp',
         'premake5.lua',
     }
-    
-    includedirs { 'include' }
 
+    includedirs { 'include' }
+    
     vpaths {
         ["Headers/*"] = "include/**.hpp",
         ["Sources"] = "src/**.cpp",

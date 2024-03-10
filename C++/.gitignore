@@ -1,0 +1,9 @@
+/**
+/**/
+
+!/**/.gitignore
+
+!Calculator/
+!NEnc/
+
+!premake5.lua
