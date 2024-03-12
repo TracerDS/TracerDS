@@ -1,4 +1,4 @@
-project "Calculator"
+project (path.getbasename(path.getabsolute('.')))
     kind "ConsoleApp"
     language "C++"
     targetdir "%{cfg.platform}/%{cfg.buildcfg}"

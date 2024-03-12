@@ -1,3 +1,17 @@
+if os.host() == 'windows' then
+    os.execute('dir /B > files.txt')
+else
+    os.execute('ls -1 > files.txt')
+end
+
+local rawFiles = io.readfile('files.txt')
+os.remove('files.txt')
+
+local files = string.explode(rawFiles,'\r\n')
+for k,v in pairs(files) do
+    if not v or v == '' or v == ' ' then files[k] = nil end
+end
+
 workspace "C++ Portfolio"
     configurations { 'Debug', 'Release' }
     platforms { 'x86', 'x64' }
@@ -26,6 +40,10 @@ workspace "C++ Portfolio"
         staticruntime 'On'
         buildoptions { '/Zc:__cplusplus' }
     
-    
-    include 'Calculator'
-    include 'NEnc'
+    for k,v in ipairs(files) do
+        if os.isdir(v) then
+            if not string.startswith('.') then
+                include (v)
+            end
+        end
+    end
