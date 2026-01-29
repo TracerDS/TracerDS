@@ -5,9 +5,9 @@
 
 <!-- Profile views -->
 <header align="center">
-    <img src="https://komarev.com/ghpvc/?username=tracerds&label=Profile%20views&color=0e75b6&style=flat" alt="tracerds" />
+    <!--<img src="https://komarev.com/ghpvc/?username=tracerds&label=Profile%20views&color=0e75b6&style=flat" alt="tracerds" />-->
     <!-- Stats -->
-    <img src="https://github-profile-trophy.vercel.app/?username=tracerds&theme=darkhub&no-bg=true&no-frame=true&column=-1" alt="tracerds" />
+    <!--<img src="https://github-profile-trophy.vercel.app/?username=tracerds&theme=darkhub&no-bg=true&no-frame=true&column=-1" alt="tracerds" />-->
 </header>
 
 <main>
